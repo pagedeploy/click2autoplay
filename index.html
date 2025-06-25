@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Autoplay Unmuted Videos" />
+    <meta
+      property="og:description"
+      content="This website asks for the user to 'accept' cookies to enable videos to autoplay with sound."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/pagedeploy/cdn/blob/main/autoplay/cookies.png?raw=true"
+    />
+    <meta property="og:url" content="https://pagedeploy.github.io/click2autoplay" />
+    <meta property="og:type" content="website" />
+    
+    <title>Loading ...</title>
+    <link
+      rel="icon"
+      href="https://github.com/pagedeploy/cdn/blob/main/autoplay/favicon.png?raw=true"
+      type="image/png"
+    />
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="cookie-container" id="cookie-container">
+        <p>
+          This website uses cookies to provide necessary website functionality
+          and improve your experience. By using our website, you agree to the
+          use of cookies.
+        </p>
+        <center>
+          <button onclick="playVideo('song720p')" class="accept">
+            Accept &amp; Continue
+          </button>
+          <button onclick="playVideo('song1080p')" class="change">
+            Change Settings
+          </button>
+        </center>
+      </div>
+
+      <div class="video-container" id="video-container">
+        <video id="custom-video" autoplay muted playsinline></video>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
