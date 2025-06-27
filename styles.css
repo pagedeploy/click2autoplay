@@ -5,6 +5,8 @@ body {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 .parent {
@@ -21,11 +23,22 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
 }
 
 p {
   font-family: "Roboto", monospace;
-  padding: 40px 50px 10px 50px;
+  padding: 0px 40px 0px 40px;
+  margin: 0;
   text-align: center;
   color: #ffffff;
   font-size: 18px;
@@ -33,7 +46,7 @@ p {
 
 button {
   font-family: "Roboto", monospace;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 20px;
   padding: 8px 16px;
   text-align: center;
@@ -44,13 +57,11 @@ button {
 }
 
 .accept {
-  margin-right: 10px;
   background-color: #ffffff;
   color: #000000;
 }
 
 .change {
-  margin-left: 10px;
   background-color: #000000;
   color: #ffffff;
 }
